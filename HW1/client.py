@@ -1,6 +1,6 @@
 # import socket module
 import socket
-
+import hashlib
 import sys
 import argparse
 import json
@@ -31,6 +31,7 @@ class Client:
         self.host = '127.0.0.1' #local host IP address
         self.revproc = args.revproc #define port on which you want to connect
         self.file = args.pkt
+        self.id = args.id
         self.policy_id=''
         #create a new socket
         self.socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
@@ -49,24 +50,40 @@ class Client:
             # sent message to server
             # s.send(message.encode('ascii'))
             self.socket.sendall(bytes(message,encoding="utf-8"))
-            print("Sending a message to privacy policy {0} through reverse proxy running on port {1}"\
-                .format(self.policy_id, self.revproc))
+            print("Client id {0}. Sending a message to privacy policy {1} through reverse proxy running on port {2}"\
+                .format(self.id, self.policy_id, self.revproc))
                 
             # message received from server
             receive= self.socket.recv(1024)
+            
+            if not receive:
+                break
+            
             # data = data.decode("utf-8")
             receive = json.loads(receive) #convert string to json object
             
+            if 'Error' in receive:
+                print('Clien id {0}. Error: {1}'.format(self.id,receive['Error']))
+                break
+            
             # print recevied message
-            print("Reveiving message from the server {0}, payload: {1}"\
-                .format(receive["srcid"], receive["payload"]))
+            print("Client id {0}. Reveiving message from the server {1}, payload: {2}"\
+                .format(self.id, receive["srcid"], receive["payload"]))
 
+            # compute SHA1 hash of message
+            hash_object = hashlib.sha1(self.payload.encode())
+            hex_dig = hash_object.hexdigest()
+            
+            if(hex_dig == receive['payload']):
+                print("Hash matched.")
+            
             # ask if the client wamts to continue
             # ans = input('\nDo you want to continue (y/n): ')
             # if ans == 'y':
             #     continue
             # else:
             #     break
+            break
                 
         #close connection
         self.socket.close()
@@ -75,6 +92,7 @@ class Client:
         with open('test_payloads/' + self.file + '.json') as f:
             json_data = json.load(f)
             self.policy_id = json_data['privPoliId']
+            self.payload = json_data['payload']
             # data ={
             #     'type': json_data['type'],
             #     'srcid': json_data['srcid'],

@@ -130,7 +130,7 @@ class Server(object):
                 "type": 2,
                 "srcid": self.server_id,
                 "destid": receive["srcid"],
-                "payloadsize": receive["payloadsize"],
+                "payloadsize":len(hex_dig),
                 "payload": hex_dig
             }
 
