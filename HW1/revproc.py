@@ -253,12 +253,7 @@ class ReverseProxy(object):
                     
                 serverSocket.close()
                 break
-                
-    def init_forwarding(self, policy_id):
-        # look up the message switch table for the servers
-        # with requested privacy policy
-        servers = self.switch.get(policy_id)
-        
+
         
 # parse commandline arguments
 # initialize the parser

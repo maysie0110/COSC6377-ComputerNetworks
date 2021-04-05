@@ -10,8 +10,6 @@ import select
 class Server(object):
     def __init__(self,args):
         super().__init__()
-        # Shutdown on Ctrl+C
-        # signal.signal(signal.SIGINT, self.shutdown)
 
         self.host = '127.0.0.1' # localhost
         self.port = args.listen #arbitrary non-privileged port
@@ -67,39 +65,6 @@ class Server(object):
 
 
     def listen(self):
-
-        # self.socket.listen(1)
-        # print("Sever is listening on {0}".format(self.port))
-        # while True:
-        #     conn, addr = self.socket.accept()
-
-        #     print("Connected to {0}:{1}".format(addr[0], addr[1]))
-        #     receive = conn.recv(1024)
-        #     receive = json.loads(receive) #convert string to json object
-
-        #     if not receive:
-        #         break
-
-        #     print("Received a message from client {0}, payload: {1}".format(receive['srcid'],receive['payload']))
-        #     # compute SHA1 hash of message
-        #     hash_object = hashlib.sha1(receive['payload'].encode())
-        #     hex_dig = hash_object.hexdigest()
-        #     # print(hex_dig)
-
-        #     ack = {
-        #         "type": 2,
-        #         "srcid": self.server_id,
-        #         "destid": receive["srcid"],
-        #         "payloadsize": receive["payloadsize"],
-        #         "payload": hex_dig
-        #     }
-
-        #     #convert dictionary into string
-        #     ack = json.dumps(ack)
-        #     conn.sendall(bytes(ack, encoding="utf-8"))
-        #     print("Sending a response to client {0}, payload: {1}".format(receive['srcid'],hex_dig))
-
-        # self.socket.close()
 
         self.serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # self.serverSocket.setsockopt(socket.)

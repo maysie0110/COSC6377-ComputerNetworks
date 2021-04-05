@@ -38,7 +38,12 @@ Note that for this assignment, please put the JSON file to be used in test-paylo
 Example: \test-payloads\1335.PP_1.json
 ```
 
-## Limitations
+## Limitations and Observations
 
 There are limitations in which the system responds poorly when all servers are busy. 
 This system assumes that a server does not disconnect and switch to a different policy and reconnect to reverse proxy.
+There is a weird bug. Sometime, the connection between reverse proxy and server shows an error 
+```
+[Errno 54] Connection reset by peer
+```
+Not entirely sure what caused the connection to reestablished. However, it does transmit the messages like normal.
