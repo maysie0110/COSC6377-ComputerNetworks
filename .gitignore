@@ -4,6 +4,8 @@ Computer-Networks-Midterm-Review/
 *.ppt 
 *.pdf
 *.docx
+*.html
+*.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

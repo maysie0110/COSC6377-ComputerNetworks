@@ -1,0 +1,357 @@
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+129.7.241.72 - - [07/Apr/2021 21:30:58] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+DNT: 1
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+129.7.241.72 - - [07/Apr/2021 21:30:58] code 404, message File not found
+129.7.241.72 - - [07/Apr/2021 21:30:58] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-GPC: 1
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+73.76.208.209 - - [07/Apr/2021 21:30:59] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-GPC: 1
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+73.76.208.209 - - [07/Apr/2021 21:30:59] code 404, message File not found
+73.76.208.209 - - [07/Apr/2021 21:30:59] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+73.115.85.14 - - [07/Apr/2021 21:31:03] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+73.115.85.14 - - [07/Apr/2021 21:31:03] code 404, message File not found
+73.115.85.14 - - [07/Apr/2021 21:31:03] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-CA,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+196.64.110.248 - - [07/Apr/2021 21:31:03] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-CA,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+196.64.110.248 - - [07/Apr/2021 21:31:04] code 404, message File not found
+196.64.110.248 - - [07/Apr/2021 21:31:04] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+DNT: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+129.7.241.72 - - [07/Apr/2021 21:31:15] "GET /server.py HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+73.115.85.14 - - [07/Apr/2021 21:31:24] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+73.115.85.14 - - [07/Apr/2021 21:32:18] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+76.30.159.150 - - [07/Apr/2021 21:32:18] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/87.0.4280.77 Mobile/15E148 Safari/604.1
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+68.20.31.233 - - [07/Apr/2021 21:32:18] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15
+Accept-Language: en-us
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+
+
+73.115.85.14 - - [07/Apr/2021 21:32:18] code 404, message File not found
+73.115.85.14 - - [07/Apr/2021 21:32:18] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+68.20.31.233 - - [07/Apr/2021 21:32:18] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+98.198.173.146 - - [07/Apr/2021 21:32:18] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/87.0.4280.77 Mobile/15E148 Safari/604.1
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+68.20.31.233 - - [07/Apr/2021 21:32:18] code 404, message File not found
+68.20.31.233 - - [07/Apr/2021 21:32:18] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+76.30.159.150 - - [07/Apr/2021 21:32:18] code 404, message File not found
+76.30.159.150 - - [07/Apr/2021 21:32:18] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:root:Host: 3.239.120.228:8001
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+174.255.216.113 - - [07/Apr/2021 21:32:19] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1
+Accept-Language: en-us
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+
+
+174.255.216.113 - - [07/Apr/2021 21:32:20] code 404, message File not found
+174.255.216.113 - - [07/Apr/2021 21:32:20] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Cache-Control: max-age=0
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+98.198.173.146 - - [07/Apr/2021 21:32:22] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+DNT: 1
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+98.198.173.146 - - [07/Apr/2021 21:32:22] code 404, message File not found
+98.198.173.146 - - [07/Apr/2021 21:32:22] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+
+68.20.31.233 - - [07/Apr/2021 21:32:23] code 404, message File not found
+68.20.31.233 - - [07/Apr/2021 21:32:23] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:root:Host: 3.239.120.228:8001
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+76.30.159.150 - - [07/Apr/2021 21:32:45] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+76.30.159.150 - - [07/Apr/2021 21:32:45] "GET / HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('73.76.208.209', 57507)
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.8/socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/ubuntu/anaconda3/lib/python3.8/socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "/home/ubuntu/anaconda3/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 647, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/home/ubuntu/anaconda3/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+ERROR:root:Host: 3.239.120.228:8001
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+73.76.208.209 - - [07/Apr/2021 21:32:48] "GET / HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('73.76.208.209', 57508)
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.8/socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/ubuntu/anaconda3/lib/python3.8/socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "/home/ubuntu/anaconda3/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 647, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "server.py", line 15, in do_GET
+    SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 651, in do_GET
+    f = self.send_head()
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 694, in send_head
+    return self.list_directory(path)
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 806, in list_directory
+    self.end_headers()
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 529, in end_headers
+    self.flush_headers()
+  File "/home/ubuntu/anaconda3/lib/python3.8/http/server.py", line 533, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/home/ubuntu/anaconda3/lib/python3.8/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Save-Data: on
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; SM-G930W8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-CA,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+196.64.110.248 - - [07/Apr/2021 21:32:48] "GET / HTTP/1.1" 200 -
+ERROR:root:Host: 3.239.120.228:8001
+Connection: keep-alive
+Save-Data: on
+User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; SM-G930W8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://3.239.120.228:8001/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-CA,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+196.64.110.248 - - [07/Apr/2021 21:32:48] code 404, message File not found
+196.64.110.248 - - [07/Apr/2021 21:32:48] "GET /favicon.ico HTTP/1.1" 404 -
