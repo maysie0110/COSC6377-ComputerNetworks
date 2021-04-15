@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - client",
+            "request": "launch",
+            "mainClass": "HW2.client",
+            "projectName": "COSC6377-ComputerNetworks_3cb49808"
+        }
+    ]
+}
