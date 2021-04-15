@@ -11,7 +11,13 @@ class GetHandler(
         ):
 
     def do_GET(self):
-        logging.error(self.headers)
+        # logging.error(self.headers)
+
+        # Output headers to file
+        file = open('log.txt', 'a')
+        file.write(str(self.headers))
+        file.close()
+    
         SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 

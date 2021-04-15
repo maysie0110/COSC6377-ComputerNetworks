@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 
 /**
  * clientDefault
+ * https://stackoverflow.com/questions/1359689/how-to-send-http-request-in-java
  */
 public class clientDefault {
 
