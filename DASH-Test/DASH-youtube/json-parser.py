@@ -10,7 +10,7 @@ def get_json_list():
 def write_to_csv(data):
     fieldnames = data[0].keys()
     
-    with open(filename+'.csv', 'w', encoding='utf8', newline='') as output_file:
+    with open(filename+'2.csv', 'w', encoding='utf8', newline='') as output_file:
         fc = csv.DictWriter(output_file, fieldnames= fieldnames)
         fc.writeheader()
         fc.writerows(data)
