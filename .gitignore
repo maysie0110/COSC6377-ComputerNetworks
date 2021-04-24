@@ -6,6 +6,11 @@ Computer-Networks-Midterm-Review/
 *.docx
 *.html
 *.zip
+50863_ABR_Lab/
+neubot/
+Locust-streaming/
+streaming-load-testing/
+*.mpd
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
