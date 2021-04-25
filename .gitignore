@@ -11,6 +11,7 @@ neubot/
 Locust-streaming/
 streaming-load-testing/
 *.mpd
+*.pem
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
