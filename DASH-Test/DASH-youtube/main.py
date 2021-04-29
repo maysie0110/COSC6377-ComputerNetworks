@@ -1,3 +1,5 @@
+#Source code: https://github.com/sharat910/selenium-youtube
+
 import random
 import time
 from youtube import YouTube

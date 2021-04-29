@@ -1,9 +1,9 @@
 import json
 import csv
 
-filename = 'logger'
+filename = 'logger-100ms-'
 def get_json_list():
-    with open(filename+'.json') as file:
+    with open(filename+'2.json') as file:
         data = json.load(file)
         return data
     

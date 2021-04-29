@@ -1,3 +1,5 @@
+#Source code: https://github.com/sharat910/selenium-youtube
+
 import os
 import time
 from datetime import datetime
@@ -211,7 +213,7 @@ class YouTube(object):
     def stop(self,success):
         print("Closing driver...")
         # write collected stats to a log file
-        with open("logger.json","w") as file:
+        with open("logger-100ms-2.json","w") as file:
             json.dump(self.data,file)
                     
         self.driver.close()
