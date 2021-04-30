@@ -21,7 +21,7 @@ class ReverseProxy(object):
         
         self.switch_table = {}
         # self.host = ''
-        self.host = '3.129.9.175'
+        self.host = '0.0.0.0'
         self.port = port
         
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -35,7 +35,7 @@ class ReverseProxy(object):
 
     def listen(self):
         self.socket.listen(10)
-        print("Reverse proxy is listening on port {0}".format(self.port))
+        print("Reverse proxy is listening on {0}:{1}".format(self.host,self.port))
         while True:
             conn, addr = self.socket.accept()
             
@@ -44,12 +44,12 @@ class ReverseProxy(object):
             #reverse proxy forks a thread and pass the connection
             # socket to this thread
             # self.handle_client_connection(client_conn, client_addr)
-            start_new_thread(self.multi_thread, (conn,))  
+            start_new_thread(self.multi_thread, (conn,addr))  
             
             # self.serve(s)
         self.socket.close()
     
-    def multi_thread(self, conn):
+    def multi_thread(self, conn, addr):
         while True:
             data = conn.recv(BUFF_SIZE)
             if not data:
@@ -63,17 +63,11 @@ class ReverseProxy(object):
             data = json.loads(data) #convert string to json object
             
             if(data['type'] == 1):
-                self.handle_server_setup(data,conn)
+                self.handle_server_setup(data,conn, addr)
             elif(data['type'] == 0):
                 self.handle_client_connection(data,conn)
             # elif(data['type'] == 2):
             #     response = self.handle_server_connection(data,conn)
-                
-            # send back response
-            # conn.send(response)
-
-            # response = json.dumps(response)
-            # conn.sendall(bytes(response, encoding="utf-8"))
 
         # connection closed
         conn.close()
@@ -82,15 +76,17 @@ class ReverseProxy(object):
     # When reverse proxy receives the setup message, it creates 
     # a message switch table that records the server id, its
     # privacy policy and the port number the server is listening
-    def handle_server_setup(self, message, conn):
+    def handle_server_setup(self, message, conn, addr):
         print("Handling server setup...")
         print('Received setup message from server id {0}, privacy policy {1}, port {2}'\
             .format(message['id'], message['privPolyId'], message['listenport']))
         
         server_id = message['id']
         policy_id = message['privPolyId']
+        # server_host = message['serverHost']
+        server_host = addr[0]
         server_port = message['listenport']
-        server = [server_id,server_port, True]
+        server = [server_id, server_host, server_port, True]
         
         if policy_id in self.switch_table:
             if server not in self.switch_table[policy_id]:
@@ -130,37 +126,31 @@ class ReverseProxy(object):
                 
                 else:
                     print("Policy exists. Connect to the server and send message")
-                    
-                    serverPort = server[1]
+                    serverHost = server[1]
+                    serverPort = server[2]
                     print("Connect to server", server)
                     
-                    server[2] = False
+                    server[3] = False
                     self.switch_table[policy_id][idx] = server
-                    print(self.switch_table)
+                    # print(self.switch_table)
                     print("Forwarding a data message from client id {0} to server id {1}, payload: {2}"\
                                 .format(message['srcid'], server[0], message['payload']))
                     #Create a socket connection to this server, get response and update the switch table.
                     serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                     
-                    check_socket_open = serverSocket.connect_ex((self.host, serverPort))
-                    # try:
-                    #     serverSocket.connect((self.host,serverPort))
-                    # except socket.error as e:
-                    #     print(str(e))
-            
+                    check_socket_open = serverSocket.connect_ex((serverHost, serverPort))
                     if check_socket_open == 0:
                         print("Port is open")
                     else:
                         print("Port is not open. Create new connection to server.")
-                        # try:
-                        serverSocket.connect((self.host,serverPort))
-                        # except socket.error as e:
-                        #     print(str(e))
+                        try:
+                            serverSocket.connect((serverHost,serverPort))
+                        except socket.error as e:
+                            print(str(e))
                             
                     while True:
                         
                         message = json.dumps(message)
-                            
                         serverSocket.sendall(bytes(message,encoding="utf-8"))
                         # message received from server
                         response = serverSocket.recv(1024)
@@ -174,9 +164,8 @@ class ReverseProxy(object):
                                 .format(response['destid'], response['payload']))
                             response= json.dumps(response)
                             conn.sendall(bytes(response, encoding="utf-8"))
-
                             
-                            server[2]=True
+                            server[3]=True
                             self.switch_table[policy_id][idx] = server
                             print(self.switch_table)
                         
@@ -205,10 +194,11 @@ class ReverseProxy(object):
         print("Rescan the switch table")
         for idx, server in enumerate(servers):
             if server[2] == True:
-                serverPort = server[1]
+                serverHost = server[1]
+                serverPort = server[2]
                 print("Connect to server", server)
                 
-                server[2] = False
+                server[3] = False
                 self.switch_table[policy_id][idx] = server
                 print(self.switch_table)
                 print("Forwarding a data message from client id {0} to server id {1}, payload: {2}"\
@@ -216,7 +206,7 @@ class ReverseProxy(object):
                 #Create a socket connection to this server, get response and update the switch table.
                 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 
-                check_socket_open = serverSocket.connect_ex((self.host, serverPort))
+                check_socket_open = serverSocket.connect_ex((serverHost, serverPort))
                 # try:
                 #     serverSocket.connect((self.host,serverPort))
                 # except socket.error as e:
@@ -227,7 +217,7 @@ class ReverseProxy(object):
                 else:
                     print("Port is not open. Create new connection to server.")
                     # try:
-                    serverSocket.connect((self.host,serverPort))
+                    serverSocket.connect((serverHost,serverPort))
                     # except socket.error as e:
                     #     print(str(e))
                         
@@ -249,7 +239,7 @@ class ReverseProxy(object):
                         response= json.dumps(response)
                         conn.sendall(bytes(response, encoding="utf-8"))
                         
-                        server[2]=True
+                        server[3]=True
                         self.switch_table[policy_id][idx] = server
                         print(self.switch_table)
                     

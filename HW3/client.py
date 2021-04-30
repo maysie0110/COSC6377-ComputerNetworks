@@ -9,7 +9,7 @@ class Client:
     def __init__(self, args):
         super().__init__()
         
-        self.host = '127.0.0.1' #local host IP address
+        self.host = 'mptrinh.ddns.net' #local host IP address
         self.revproc = args.revproc #define port on which you want to connect
         self.file = args.pkt
         self.id = args.id
@@ -20,7 +20,7 @@ class Client:
         
     def connect(self):
 
-        #connect to server on local computer
+        #connect to reverse proxy
         self.socket.connect((self.host, self.revproc))
         print('Socket connected on port ', self.revproc)
         

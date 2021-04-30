@@ -14,7 +14,6 @@ class Server(object):
         self.revhost = '18.219.179.216' # revproc 
         
         self.host = '0.0.0.0'
-        # self.publicIP = ' 3.134.45.164'
         self.port = args.listen #arbitrary non-privileged port
         self.revproc = args.revproc #well-known port on which the reverse proxy is running
         self.server_id = args.id
@@ -47,7 +46,6 @@ class Server(object):
             "type": 1, # 1 is a connection setup message from a server
             "id": self.server_id, # id of the server
             "privPolyId": self.policy_id, # privacy policy of the server
-            # "serverHost": self.publicIP, 
             "listenport": self.port # port on which the server is listening
         }
 
