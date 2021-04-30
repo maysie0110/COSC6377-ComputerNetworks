@@ -47,7 +47,6 @@ class Server(object):
             "type": 1, # 1 is a connection setup message from a server
             "id": self.server_id, # id of the server
             "privPolyId": self.policy_id, # privacy policy of the server
-            # "serverHost": self.publicIP, 
             "listenport": self.port # port on which the server is listening
         }
 

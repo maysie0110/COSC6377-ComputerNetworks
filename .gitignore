@@ -2,7 +2,7 @@
 Computer-Networks-Midterm-Review/*
 Computer-Networks-Midterm-Review/
 *.ppt 
-*.pdf
+# *.pdf
 *.docx
 *.html
 *.zip
@@ -12,7 +12,7 @@ Locust-streaming/
 streaming-load-testing/
 *.mpd
 *.pem
-
+paper/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
